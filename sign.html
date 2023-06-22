@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script>
+        function validation()
+        {
+           var f=document.getElementById("f1").value;
+           var l=document.getElementById("l1").value;
+           var e=document.getElementById("e1").value;
+           var pa1=document.getElementById("p1").value;
+           var pa2=document.getElementById("p2").value;
+           if(f.length==0||l.length==0||e.length==0||pa1.length==0||pa2.length==0){
+            alert("fill all fields");
+           }
+           else{
+            localStorage.setItem('email',e);
+            localStorage.setItem('pwd',pa1);
+            if(pa1==pa2)
+            {
+               window.location.href="log.html";
+                alert("registered successfully");
+            }
+            else{
+                alert("both passwords should match");
+            }
+           }
+        }
+    </script>
+</head>
+<body>
+    <div class="center">
+      <h1><i class="fas fa-shopping-basket" style="color: #ff7800;padding-top: 10px;"></i>ProFarm</h1>
+        <h2>Sign Up</h2>
+        <p>It's free and only takes a minute </p>
+        <form>
+         <div class="txt_field">
+            <input type="text" id="f1" required>
+            <span></span>
+            <label>First Name</label>
+         </div>
+         <div class="txt_field">
+            <input type="text" id="l1" required>
+            <span></span>
+            <label>Last Name</label>
+         </div>
+         <div class="txt_field">
+            <input type="email"id="e1" required>
+            <span></span>
+            <label>Email</label>
+         </div>
+         <div class="txt_field">
+            <input type="password" id="p1" required>
+            <span></span>
+            <label>Password</label>
+         </div>
+         <div class="txt_field">
+            <input type="password" id="p2" required>
+            <span></span>
+            <label>Confirm Password</label>
+         </div>
+         <input type="submit" value="Submit" onclick="validation()">
+         <div class="signup_link">
+            By clicking the Sign Up button you agree to our <a href="tc.html">Terms and Conditions</a> and <a href="poli.html">Policy Privacy</a>
+         </div>
+        </form>
+    </div>
+</body>
+</html>

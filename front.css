@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
+*{
+    padding: 0px;
+    /* border: 1px solid red; */
+    margin: 0;
+    
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background-image: linear-gradient(45deg,rgb(29, 47, 184),rgb(170, 170, 238));
+}
+
+.nav{
+    position: sticky;
+    top: 0%;
+}
+.head{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    font-size: 5px;
+    height: 10vh;
+    margin: 0px 1.2em;
+    padding: .4em;
+}
+.head:hover{
+    font-size: 1.4em;
+    transition: .3s;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    box-shadow: 0px 0px 8px blue;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.head p{
+    text-align: center;
+}
+.nav{
+    display: flex;
+    background-image: linear-gradient(45deg,rgb(190, 238, 190),rgb(170, 170, 238));
+    justify-content: center;
+    align-items: center;
+}
+.nav h1{
+    margin-left: 1.2em;
+    font-family: 'The Nautigal', cursive;
+}
+.nav .list{
+    padding-right: 20px;
+    display: flex;
+    gap: 10px;
+    transition:all 1s;
+}
+.nav .icon{
+    /* border: 1px solid red; */
+    margin-right: 4em;
+    width: 15vw;
+    display: flex;
+    justify-content: space-between
+}
+.nav .icon button{
+    padding: 2px;
+    color: white;
+    background-color: rgb(20, 23, 24);
+    text-transform: uppercase;
+}
+.nav .icon button:hover{
+   background-color: black;
+   color: rgb(233, 238, 241);
+   opacity: .5;
+   border-radius: 4px;
+   cursor: pointer;
+   transform: scale(1.1);
+   transition: .5s;
+}
+.nav .icon i{
+    font-size: 20px;
+    padding: 4px;
+    border-radius: 2px;
+}
+.icon i:hover{
+    transition: .5s;
+    color:rgba(255, 255, 255, 0.796);
+    background-color: black;
+    transform: scale(1.2);
+}
+h1{
+   
+    font-family: 'Anton', sans-serif;
+letter-spacing: 2px;
+padding-left: 10px;
+font-size: 2em;
+}
+.nav ul{
+    list-style: none;
+}
+.matter{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.6em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+
+}
+.matter p{
+    background-color: skyblue;
+    text-shadow: 0px 0px 4px black;
+    box-shadow: 0px 0px 2px skyblue;
+    display: inline;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    background-image: linear-gradient(45deg,rgb(29, 47, 184),rgb(170, 170, 238));
+    gap: 6%;
+}
+.food,.plastic{
+    
+    height: 40vh;
+    width: 25vw;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px black;
+    
+}
+.food{
+    background-image: url("farm\ .jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.plastic{
+    background-image: url(customer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+    padding: 4px 8px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+a:hover{
+    transform: scale(1.2);
+    background-color: whitesmoke;
+    border-radius: 4px;
+    transition: .5s;
+    color: black;
+}
+@media(min-width:100px) and (max-width:1000px){
+    .food,.plastic{
+        width:40vw;
+    }
+    .head{
+        height: 18vh;
+        transition: .5s;
+    }
+   
+}
